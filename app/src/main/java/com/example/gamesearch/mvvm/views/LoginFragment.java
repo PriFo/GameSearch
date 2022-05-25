@@ -31,7 +31,8 @@ public class LoginFragment extends Fragment implements BottomNavigationView.OnNa
     private TextView frgtnPass;
     private Button signInBtn;
     private LoginViewModel viewModel;
-    private NavController navController;
+    BottomNavigationView bottomNavigationView;
+    NavController controller;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class LoginFragment extends Fragment implements BottomNavigationView.OnNa
                 .getInstance(getActivity().getApplication())).get(LoginViewModel.class);
         viewModel.getUserData().observe(this, firebaseUser -> {
             if (firebaseUser != null){
-                navController.navigate(R.id.action_loginFragment_to_profileFragment);
+                controller.navigate(R.id.action_loginFragment_to_profileFragment);
             }
         });
     }
@@ -66,9 +67,9 @@ public class LoginFragment extends Fragment implements BottomNavigationView.OnNa
         bottomNavigationView = view.findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-        navController = Navigation.findNavController(view);
+        controller = Navigation.findNavController(view);
 
-        signUpText.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_signInFragment));
+        signUpText.setOnClickListener(v -> controller.navigate(R.id.action_loginFragment_to_signInFragment));
 
         signInBtn.setOnClickListener(v -> {
             String email = emailEdit.getText().toString();
@@ -79,11 +80,8 @@ public class LoginFragment extends Fragment implements BottomNavigationView.OnNa
             }
         });
 
-        frgtnPass.setOnClickListener(view1 -> navController.navigate(R.id.action_loginFragment_to_profileFragment));
+        frgtnPass.setOnClickListener(view1 -> controller.navigate(R.id.action_loginFragment_to_profileFragment));
     }
-
-    BottomNavigationView bottomNavigationView;
-    NavController controller;
 
     @SuppressLint("NonConstantResourceId")
     @Override

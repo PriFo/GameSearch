@@ -48,13 +48,13 @@
 
                 <ImageButton
                     android:id="@+id/gameImagePop2"
-                    tools:ignore="SpeakableTextPresentCheck"
-                    tools:visibility="visible"
                     android:layout_width="115dp"
                     android:layout_height="115dp"
                     android:background="@drawable/circle_shape"
                     android:visibility="visible"
-                    app:srcCompat="@android:drawable/divider_horizontal_dark" />
+                    app:srcCompat="@android:drawable/divider_horizontal_dark"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:visibility="visible" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -105,8 +105,10 @@
                 android:textSize="34sp" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="311dp"
-                android:layout_height="326dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:id="@+id/rv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="50dp" />
 
         </LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GameSearch</string>
+    <string name="popular_now">Popular now</string>
+    <string name="hi">Hi, Stranger</string>
+    <string name="rec">Recommended</string>
+    <string name="prog_info">The developer is not responsible for copyright infringement, as well as for financial losses of users. You perform all actions at your own risk. The developer of this application only provides ways to purchase a particular game that you want to find in this application. Be careful and do not make purchases on suspicious sites.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="nickname_prof">Your nickname here</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="phone_number">Phone number</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_L">or <u>Sign in</u></string>
+    <string name="log_in">Log in</string>
+    <string name="_forgot_password"><u>Forgot password?</u></string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="send_code">Send code</string>
+    <string name="forg_pass_descr">Enter your phone number to receive a message with a personal code to delete the old password</string>
+    <string name="confirm_code">Confirm code</string>
+    <string name="confirm">Confirm</string>
+    <string name="enter_code">Enter code</string>
+    <string name="change_password">Change password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_code_descr">Enter your code to cinfirm the password change</string>
+    <string name="change_pass_descr">Write down the password somewhere so as not to forget it and not waste time in the future</string>
+    <string name="favorites">Favorites</string>
+    <string name="email">Email</string>
+</resources>

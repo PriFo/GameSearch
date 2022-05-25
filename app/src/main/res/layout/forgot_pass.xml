@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:drawingCacheQuality="high"
+    android:fadingEdge="vertical"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backBut"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="55dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/main"
+                android:visibility="visible"
+                app:cornerRadius="0dp"
+                app:icon="?attr/homeAsUpIndicator"
+                app:iconTint="#000000"
+                app:iconPadding="0dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textForgPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oxanium"
+                android:text="@string/forgot_password"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/forgPassDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oxanium"
+            android:text="@string/forg_pass_descr"
+            android:textColor="@color/black"
+            android:layout_gravity="start"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:background="@drawable/ic_search_bar"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/oxanium"
+            android:inputType="phone"
+            android:padding="24dp"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/sendCodeBut"
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/main"
+            android:backgroundTintMode="add"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/oxanium"
+            android:text="@string/send_code"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

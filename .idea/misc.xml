@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.332" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_face_24.xml" value="0.1935" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_home_24.xml" value="0.1935" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_home_repair_service_24.xml" value="0.1935" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_home_work_24.xml" value="0.1935" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_image_search_24.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_person_24.xml" value="0.1935" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/baseline_search_24.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/circle_shape.xml" value="0.3625" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/conter.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/ic_launcher_background.xml" value="0.332" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/ic_navigation_bar.xml" value="0.332" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/ic_seach_filter.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/ic_search_bar.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/ic_search_filter.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/ic_untitled.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/drawable/iconSearch.xml" value="0.3635" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/activity_main.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/change_lang.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/change_pass.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/confirm_code.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/edit_profile.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/favorites.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/forgot_pass.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/fragments_container.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/game_card.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/home.xml" value="0.136" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/icon.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/log_in.xml" value="0.2" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/main_menu.xml" value="0.30526315789473685" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/open_game.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/profile.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/profile_unsigned.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/prog_info.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/recently.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/search_filter.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/search_menu.xml" value="0.25" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/layout/sign_in.xml" value="0.29" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.30526315789473685" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/menu/icon.xml" value="0.8721804511278195" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/menu/menu.xml" value="0.33" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.332" />
+        <entry key="..\:/Users/screb/Desktop/Learning/MobileDevelop/project/GameSearch/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

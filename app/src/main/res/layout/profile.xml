@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:drawingCacheQuality="high"
+    android:fadingEdge="vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:id="@+id/textLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/oxanium"
+                android:text="Nickname"
+                android:textColor="#000000"
+                android:textSize="27sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/editProfBut"
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/main"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/oxanium"
+            android:text="@string/log_in"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/recentlyBut"
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/main"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/oxanium"
+            android:text="Recently"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/favorBut"
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.5"
+            android:clickable="false"
+            android:backgroundTint="@color/main"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/oxanium"
+            android:text="@string/favorites"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/languageBut"
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/main"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/oxanium"
+            android:text="Language"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/progInfoBut"
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/main"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/oxanium"
+            android:text="About the program"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:background="@drawable/ic_navigation_bar"
+        android:visibility="visible"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu"
+        tools:visibility="visible">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

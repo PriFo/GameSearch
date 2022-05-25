@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@color/main"
+                    android:visibility="visible"
+                    app:cornerRadius="0dp"
+                    app:icon="?attr/homeAsUpIndicator"
+                    app:iconTint="#000000"
+                    app:iconPadding="0dp"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/gameNameNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/oxanium"
+                    android:text="TextView"
+                    android:textSize="24sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gamePicNow"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/circle_shape"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gameDevNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/oxanium"
+                        android:text="Developer: "
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/gamePubNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/oxanium"
+                        android:text="Publisher: "
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/gameGenreNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oxanium"
+                        android:text="Genre: "
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gameDescrNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/oxanium"
+                android:text="Description here"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/gameRequireNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/oxanium"
+                android:text="System Require here"
+                android:textColor="@color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DA6565"
+        android:text="AddToFav"
+        android:visibility="visible"
+        app:cornerRadius="100dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

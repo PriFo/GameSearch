@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "922471638879",
+    "project_id": "gamesearch-99b67",
+    "storage_bucket": "gamesearch-99b67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922471638879:android:ec129255954486830278ea",
+        "android_client_info": {
+          "package_name": "com.example.gamesearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922471638879-losuf1ilorbj8nlfr4apqb5udskq27pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXsp5tw4QnIDjiV_KtVJUYZ0aWYG78qDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922471638879-losuf1ilorbj8nlfr4apqb5udskq27pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

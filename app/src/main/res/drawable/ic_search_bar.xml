@@ -1,0 +1,8 @@
+<vector android:autoMirrored="true" android:height="274dp"
+    android:viewportHeight="274" android:viewportWidth="1207"
+    android:width="1207dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="Прямоугольник 1"
+        android:pathData="m135 14h937c66.83 0 121 54.17 121 121c0 66.83 -54.17 121 -121 121h-937c-66.83 0 -121 -54.17 -121 -121c0 -66.83 54.17 -121 121 -121z"
+        android:strokeColor="#000" android:strokeLineCap="square"
+        android:strokeLineJoin="round" android:strokeWidth="4"/>
+</vector>

@@ -1,0 +1,14 @@
+{
+  "users": [
+      {
+      "login": "Admin",
+      "phone": "+79213456789",
+      "password": "Admin123"
+    },
+    {
+        "login": "PriFo",
+        "phone": "+79123456789",
+        "password": "12345678"
+      }
+  ]
+}

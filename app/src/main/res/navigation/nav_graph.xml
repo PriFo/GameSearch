@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gamesearch.mvvm.views.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/log_in">
+        <action
+            android:id="@+id/action_loginFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.gamesearch.mvvm.views.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.gamesearch.mvvm.views.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_progInfoFragment"
+            app:destination="@id/progInfoFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_recentlyFragment"
+            app:destination="@id/recentlyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfFragment"
+            app:destination="@id/editProfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.gamesearch.mvvm.views.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/change_lang">
+        <action
+            android:id="@+id/action_languageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/progInfoFragment"
+        android:name="com.example.gamesearch.mvvm.views.ProgInfoFragment"
+        android:label="ProgInfoFragment"
+        tools:layout="@layout/prog_info">
+        <action
+            android:id="@+id/action_progInfoFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.gamesearch.mvvm.views.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home">
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_openGameFragment"
+            app:destination="@id/openGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.gamesearch.mvvm.views.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/search_menu">
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment android:id="@+id/favoritesFragment"
+        android:name="com.example.gamesearch.mvvm.views.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/favorites">
+        <action
+            android:id="@+id/action_favoritesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment android:id="@+id/recentlyFragment"
+        android:name="com.example.gamesearch.mvvm.views.RecentlyFragment"
+        android:label="RecentlyFragment"
+        tools:layout="@layout/recently">
+        <action
+            android:id="@+id/action_recentlyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_recentlyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_recentlyFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openGameFragment"
+        android:name="com.example.gamesearch.mvvm.views.OpenGameFragment"
+        android:label="OpenGameFragment"
+        tools:layout="@layout/open_game">
+        <action
+            android:id="@+id/action_openGameFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfFragment"
+        android:name="com.example.gamesearch.mvvm.views.EditProfFragment"
+        android:label="EditProfFragment"
+        tools:layout="@layout/edit_profile">
+        <action
+            android:id="@+id/action_editProfFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

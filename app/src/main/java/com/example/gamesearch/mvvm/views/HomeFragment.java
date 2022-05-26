@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +19,7 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gamesearch.R;
-import com.example.gamesearch.mvvm.adapters.RecyclerViewHomeAdapter;
+import com.example.gamesearch.mvvm.adapters.RecyclerViewAdapter;
 import com.example.gamesearch.mvvm.models.GameCard;
 import com.example.gamesearch.mvvm.viewmodels.HomeViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,9 +32,14 @@ public class HomeFragment extends Fragment implements BottomNavigationView.OnNav
         // require a empty public constructor
     }
 
+
+    TextView gameName;
+    TextView gameGenre;
+    TextView gamePrice;
+    LinearLayout pop_game;
     HomeViewModel viewModel;
     RecyclerView recyclerView;
-    RecyclerViewHomeAdapter recyclerViewAdapter;
+    RecyclerViewAdapter recyclerViewAdapter;
     BottomNavigationView bottomNavigationView;
     NavController controller;
 
@@ -44,23 +51,38 @@ public class HomeFragment extends Fragment implements BottomNavigationView.OnNav
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        pop_game = view.findViewById(R.id.pop_game);
+        gameName = view.findViewById(R.id.gameNamePop2);
+        gameGenre = view.findViewById(R.id.gameGenrePop2);
+        gamePrice = view.findViewById(R.id.gamePricePop2);
         bottomNavigationView = view.findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.page_2);
         controller = Navigation.findNavController(view);
         recyclerView = view.findViewById(R.id.rv_home);
-        recyclerViewAdapter = new RecyclerViewHomeAdapter();
+        recyclerViewAdapter = new RecyclerViewAdapter();
         recyclerView.setAdapter(recyclerViewAdapter);
         viewModel = new ViewModelProvider(this , ViewModelProvider.AndroidViewModelFactory
                 .getInstance(getActivity().getApplication())).get(HomeViewModel.class);
         viewModel.getUserMutableLiveData().observe(getViewLifecycleOwner(), gameListUpdateObserver);
+
+        gameName.setText(viewModel.getTmp_gmCrd().getGameName());
+        gameGenre.setText(viewModel.getTmp_gmCrd().getGameGenre());
+        gamePrice.setText(viewModel.getTmp_gmCrd().getGamePrice());
+
+        pop_game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                controller.navigate(R.id.action_homeFragment_to_openGameFragment);
+            }
+        });
     }
 
     final Observer<ArrayList<GameCard>> gameListUpdateObserver = new Observer<ArrayList<GameCard>>() {
 
         @Override
         public void onChanged(ArrayList<GameCard> gameArrayList) {
-            recyclerViewAdapter = (RecyclerViewHomeAdapter) recyclerView.getAdapter();
+            recyclerViewAdapter = (RecyclerViewAdapter) recyclerView.getAdapter();
             recyclerViewAdapter.updateGameList(gameArrayList);
             recyclerView.setAdapter(recyclerViewAdapter);
         }

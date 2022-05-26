@@ -16,11 +16,11 @@ import com.example.gamesearch.mvvm.models.GameCard;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewHomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     ArrayList<GameCard> gameArrayList;
 
-    public RecyclerViewHomeAdapter() {
+    public RecyclerViewAdapter() {
         this.gameArrayList = new ArrayList<>();
     }
 

@@ -17,33 +17,51 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <EditText
-                android:id="@+id/seachName"
-                style="@style/Widget.AppCompat.EditText"
-                android:layout_width="335dp"
-                android:layout_height="65dp"
-                android:layout_marginBottom="20dp"
-                android:autofillHints=""
-                android:background="@drawable/ic_search_bar"
-                android:drawableStart="@drawable/baseline_search_24"
-                android:drawableEnd="@drawable/ic_search_filter"
-                android:drawableTint="@color/black"
-                android:fontFamily="@font/oxanium"
-                android:hint="Enter game name"
-                android:inputType="text"
-                android:lineSpacingExtra="8sp"
-                android:padding="12dp"
-                android:singleLine="true"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:visibility="visible"
-                android:layout_gravity="center"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/searchName"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="335dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_search_bar"
+                    android:drawableStart="@drawable/baseline_search_24"
+                    android:drawableEnd="@drawable/ic_search_filter"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/oxanium"
+                    android:hint="Enter game name"
+                    android:inputType="text"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="38dp"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/buttonFilters"
+                    android:layout_width="55dp"
+                    android:layout_height="48dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="308dp"
+                    tools:layout_editor_absoluteY="7dp"
+                    android:alpha="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
         </LinearLayout>
     </ScrollView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"

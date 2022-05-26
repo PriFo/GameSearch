@@ -2,10 +2,13 @@ package com.example.gamesearch.mvvm.views;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +20,10 @@ import com.example.gamesearch.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SearchFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+    EditText game;
+    String game_name;
+
 
     public SearchFragment(){
         // require a empty public constructor
@@ -33,6 +40,24 @@ public class SearchFragment extends Fragment implements BottomNavigationView.OnN
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        game = view.findViewById(R.id.searchName);
+        game.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
         bottomNavigationView = view.findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.page_1);

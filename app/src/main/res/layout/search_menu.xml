@@ -41,17 +41,22 @@
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:visibility="visible"
-                    tools:layout_editor_absoluteX="38dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints" />
 
                 <Button
                     android:id="@+id/buttonFilters"
                     android:layout_width="55dp"
                     android:layout_height="48dp"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="308dp"
-                    tools:layout_editor_absoluteY="7dp"
-                    android:alpha="0"/>
+                    android:alpha="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.47"
+                    tools:ignore="MissingConstraints" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.recyclerview.widget.RecyclerView

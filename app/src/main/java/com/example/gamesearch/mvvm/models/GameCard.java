@@ -5,7 +5,15 @@ public class GameCard {
     private String gameGenre;
     private String gamePrice;
     private String imgIcon;
+    private String appid;
 
+    public String getAppid() {
+        return appid;
+    }
+
+    public void setAppid(String appid) {
+        this.appid = appid;
+    }
 
     public String getGameName() {
         return gameName;

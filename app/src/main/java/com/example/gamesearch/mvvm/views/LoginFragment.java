@@ -24,6 +24,8 @@ import com.example.gamesearch.mvvm.viewmodels.LoginViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Objects;
+
 public class LoginFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     private EditText emailEdit, passEdit;
@@ -38,7 +40,7 @@ public class LoginFragment extends Fragment implements BottomNavigationView.OnNa
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(this , ViewModelProvider.AndroidViewModelFactory
-                .getInstance(getActivity().getApplication())).get(LoginViewModel.class);
+                .getInstance(requireActivity().getApplication())).get(LoginViewModel.class);
         viewModel.getUserData().observe(this, firebaseUser -> {
             if (firebaseUser != null){
                 controller.navigate(R.id.action_loginFragment_to_profileFragment);

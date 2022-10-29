@@ -69,10 +69,15 @@ public class HomeFragment extends Fragment implements BottomNavigationView.OnNav
         gameName.setText(viewModel.getTmp_gmCrd().getGameName());
         gameGenre.setText(viewModel.getTmp_gmCrd().getGameGenre());
         gamePrice.setText(viewModel.getTmp_gmCrd().getGamePrice());
+        viewModel.getRepo().setController(controller);
+        viewModel.getRepo().setHome(true);
 
         pop_game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                viewModel.getRepo().setAppid(viewModel.getAppid_pop());
+                viewModel.getRepo().setName(gameName.getText().toString());
+                viewModel.getRepo().setGenre(gameGenre.getText().toString());
                 controller.navigate(R.id.action_homeFragment_to_openGameFragment);
             }
         });
